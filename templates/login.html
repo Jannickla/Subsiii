@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+    <section class="page-section" style="padding-top: 150px; height: 90vh;">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase">Welcome Back</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-10 col-12">
+                  <form method="post" novalidate>
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ next }}">
+                    {{ form.username|as_crispy_field }}
+                    {{ form.password|as_crispy_field }}
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

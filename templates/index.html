@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- <img class="masthead-avatar mb-5" src="/static/img/avatars.svg" alt="">-->
+            <i class="fas fa-hand-receiving"></i>
+            <h1 class="masthead-heading text-uppercase mb-2">MyBox Every Month</h1>
+            <p class="masthead-subheading font-weight-light mb-5">Sign up today for just $25 a month</p>
+            <button class="btn btn-xl ctaBtn btn-outline-light">Get started</button>
+        </div>
+    </header>
+    <section class="page-section bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-white">It's that easy</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="fal fa-shopping-basket fa-10x mb-2"></i>
+                    <h4>Step 1</h4>
+                    <p class="lead font-weight-bold">Order a box via your Subsy platform</p>
+                </div>
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="fal fa-box-heart fa-10x mb-2"></i>
+                    <h4>Step 2</h4>
+                    <p class="lead font-weight-bold">Wait 3 days till your box arrives</p>
+                </div>
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="fal fa-clock fa-10x mb-2"></i>
+                    <h4>Step 3</h4>
+                    <p class="lead font-weight-bold">Be patient to our next delivery is ready</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Choose a MyBox</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fas fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <!-- <img class="img-fluid" src="/static/img/shop/cabin.png" alt=""> -->
+                        <div class="boxPack">
+                            <h4>6 times a year</h4>
+                            <p class="pb-5 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="lead text-center">Pack my box<br> <i class="fal fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <!-- <img class="img-fluid" src="/static/img/shop/cake.png" alt=""> -->
+                        <div class="boxPack">
+                            <h4>9 times a year</h4>
+                            <p class="pb-5 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="lead text-center">Pack my box<br> <i class="fal fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <!-- <img class="img-fluid" src="/static/img/shop/circus.png" alt=""> -->
+                        <div class="boxPack">
+                            <h4>12 times a year</h4>
+                            <p class="pb-5 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="lead text-center">Pack my box<br> <i class="fal fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-white">Why Choose MyBox</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">MyBox is build on the leading platform Subsy, who make the life easier for companies, who ships products on subscriptions. Take your adventure to next level, and join our journey against getting our clients from bottom to sky rocket!</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Get a shop like this, it's cheap, fast and painless. Did you know that we listen to our clients wishes, and usually develop what people wish within short time?</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-xl ctaBtn btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+                    <i class="far fa-box-open"></i> Get your box in 3 days
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Frequent asked questions</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

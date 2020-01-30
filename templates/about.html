@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- <img class="masthead-avatar mb-5" src="/static/img/avatars.svg" alt="">-->
+            <i class="fas fa-hand-receiving"></i>
+            <h1 class="masthead-heading text-uppercase mb-2">MyBox</h1>
+            <p class="masthead-subheading font-weight-light mb-5">Where Innovation Meet Needs</p>
+            <button class="btn btn-xl ctaBtn btn-outline-light">Get started</button>
+        </div>
+    </header>
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase">MyBox Concept</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fal fa-4x fa-credit-card text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">The Order</h3>
+                        <p class="text-muted mb-0">Sign up for one of our 3 subscription plans!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fal fa-4x fa-box-heart text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">The Love</h3>
+                        <p class="text-muted mb-0">We find what you need for the box and wrap it nicely!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fal fa-4x fa-truck-loading text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">The Deliver</h3>
+                        <p class="text-muted mb-0">You can safely do yours, meanwhile we bring it safely to you!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fal fa-4x fa-box-full text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">The Moment</h3>
+                        <p class="text-muted mb-0">You can now enjoy your box, till we see again!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="{% static 'img/shop/earlier_box_2.jpg' %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="page-section-heading text-center text-uppercase text-white">Want Us To Pack Your MyBox Today?</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <a class="btn ctaBtn btn-light btn-xl" href="#">Pack Now!</a>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase">Wanna Tell Us Anything?</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                    <div>+48 123 456 789</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="mailto:contact@mybox.com">contact@mybox.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

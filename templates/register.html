@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+    <section class="page-section" style="padding-top: 150px; height: 90vh;">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase">Join MyBox Today</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fal fa-hand-receiving"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-10 col-12">
+                  <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-success">Sign up</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
